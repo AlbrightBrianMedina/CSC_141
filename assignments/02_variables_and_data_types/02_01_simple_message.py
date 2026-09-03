@@ -1,9 +1,3 @@
-"""
-name = "Ada Lovelace"
-print(name.upper())
-print(name.lower())
-"""
-
-name = "My name is Brian Medina"
-print(name.upper())
-print(name.lower())
+sentence = "The quick brown fox jumped over the log"
+print(sentence.upper())
+print(sentence.lower())
