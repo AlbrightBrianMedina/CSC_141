@@ -6,3 +6,6 @@ realism is fun I go play games to have fun-"""
 famous_person = "gabe newell"
 message = f"{famous_person.title()} once said \"{quote}\""
 print(message)
+
+
+#https://www.youtube.com/watch?v=MGpFEv1-mAo  <-- Link to quote
