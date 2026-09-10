@@ -1,6 +1,6 @@
 #This program is making a list of guests and inviting them to a dinner party.
 
-guest_list=("Lebron James", "Abraham Lincoln", "George Lucas", "Walt Disney")
+guest_list = ("Lebron James", "Abraham Lincoln","George Lucas", "Walt Disney")
 
 message = f"You have been invited to my dinner party, {guest_list[0].title()}."
 print(message)
