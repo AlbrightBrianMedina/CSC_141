@@ -1,0 +1,15 @@
+a = 1  
+#a variable
+
+a = 1
+print(a)
+#printing a variable 
+
+
+
+ """
+    .insert() then a index number, followed by "word"
+    .append automatically adds a item to the last of the list
+    for the same message but for different names, use "for ___ in ___ : "
+    then print the message
+    """
