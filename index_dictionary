@@ -1,7 +1,10 @@
 #These files are to make my own personal dictionary/index to remember how to make codes.
+"""DO NOT DELETE"""
 
 """Use qoutations to make comments"""
 #Can also use hashtags to make single line comments
+
+"""CHAPTER 1"""
 
 a = 1  
 #a variable
@@ -12,7 +15,7 @@ a = 1
 print(a)
 #printing a variable 
 
-
+"""CHAPTER 2"""
 
 print(sentence.upper())
 print(sentence.lower())
@@ -85,7 +88,7 @@ print (12-4)
 print (16/2)
 #basic math formulas
 
-
+"""CHAPTER 3"""
 
 names = ["mack", "dan", "george", "ron"]
 message = names[0].title()
@@ -188,4 +191,14 @@ guest_list = ["Lebron James", "Abraham Lincoln","George Lucas", "Walt Disney"]
 print(f"Hello, we will be having {len(guest_list)} for dinner this evening")
 #counting the number of items in a list
 
+"""CHAPTER 4"""
 
+for i in range (0,21):
+    print (i)
+#indicating inside range
+
+
+pizzas = ['Veggie Delight', 'Pepperoni', "Jimmy's Pie", "Anchovies"]
+for pizza in pizzas:
+    print("Damn, I want some of that " + pizza + "!")
+#creating a 4-loop
