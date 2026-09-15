@@ -1,4 +1,4 @@
-#This is what the program is doing. 
+#Have to replace someone on the list
 
 guest_list=["Lebron James", "Abraham Lincoln", "George Lucas", "Walt Disney"]
 

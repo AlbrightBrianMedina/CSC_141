@@ -1,5 +1,12 @@
+#These files are to make my own personal dictionary/index to remember how to make codes.
+
+"""Use qoutations to make comments"""
+#Can also use hashtags to make single line comments
+
 a = 1  
 #a variable
+
+
 
 a = 1
 print(a)
@@ -7,9 +14,178 @@ print(a)
 
 
 
- """
-    .insert() then a index number, followed by "word"
-    .append automatically adds a item to the last of the list
-    for the same message but for different names, use "for ___ in ___ : "
-    then print the message
-    """
+print(sentence.upper())
+print(sentence.lower())
+#this will 
+#make a sentence all uppercase or lowercase
+
+
+
+first_name = "Mario"
+last_name = "Luigi"
+full_name = f"{first_name} {last_name}"
+print(full_name)
+#this combines both variables and the -f key formats it to allow it to be written like a proper name
+
+
+
+print(f"Greets there, {full_name.title()}!")
+#the .title() capitalizes all first letters to look more formal
+
+
+
+invintation_guest = "Eric Pumpkins"
+print(f"You have been invited to my party, {invintation_guest}")
+#custom messaging
+
+
+
+quote = """-where you'd be sitting in a design review and somebody say that's not 
+realistic and you're like okay what does that have like explain to me why that's
+interesting because in the real world I have to write up lists of stuff I have to
+go to the grocery store to buy and I have never thought to myself that
+realism is fun I go play games to have fun-"""
+author = "gabe newell"
+print(f"{author.title()} once said \"{quote}\"")
+#example of making a quote and crediting the author
+
+
+
+author = "\tThis guy\n"
+quote = "To do something is to do a thing"
+print(f"{author.title().rstrip()} once said \"{quote}\"")
+print()
+print(f"{author.title().lstrip()} once said \"{quote}\"")
+print()
+print(f"{author.title().strip()} once said \"{quote}\"")
+
+"""
+backspace t adds at least a tab's length of space 
+backspace n as a new line for the next string to start
+.rstrip() removes the whitespace/empty space after a varible
+.lstrip() removes the whitespace/empty space before a varible
+.strip() removes whitespace/empty spaces from both sides of the varible
+"""
+
+
+
+filename = "python_notes.txt"
+print(filename.removesuffix(".txt"))
+
+"""
+.removesuffix() removes whatever it's told to remove within it's brackets.
+since the inside of the brackets contain .txt, it removed the .txt when printing.
+"""
+
+
+
+print (4+4)
+print (2*4)
+print (12-4)
+print (16/2)
+#basic math formulas
+
+
+
+names = ["mack", "dan", "george", "ron"]
+message = names[0].title()
+print(message)
+message = names[1].title()
+print(message)
+message = names[2].title()
+print(message)
+message = names[3].title()
+print(message)
+#making a list
+
+
+
+names = ["mack", "dan", "george", "ron"]
+message = f"One of my friends is named {names[0].title()}."
+print(message)
+message = f"One of my friends is named {names[1].title()}."
+print(message)
+message = f"One of my friends is named {names[2].title()}."
+print(message)
+message = f"One of my friends is named {names[3].title()}."
+print(message)
+#having multiple messages using only one name from the list
+
+
+
+list_of_vehicles=("car", "bus", "bike", "scooter")
+print(f"I usually am the passanger in a {list_of_vehicles[0]}.")
+print(f"I have to take the {list_of_vehicles[1]} to school.")
+print(f"I do have a {list_of_vehicles[2]} at home.")
+print(f"One day I do want to own an electric {list_of_vehicles[3]}.")
+#different messages for each item in the list
+
+
+
+guest_list=["Lebron James", "Abraham Lincoln", "George Lucas", "Walt Disney"]
+
+message = f"You have been invited to my dinner party, {guest_list[0].title()}."
+print(message)
+print()
+message = f"Here is my invitation for you, {guest_list[1].title()}."
+print(message)
+print()
+message = f"Here, have a dinner party invitation {guest_list[2].title()}."
+print(message)
+print()
+message = f"Come to my dinner party, {guest_list[3].title()}."
+print(message)
+print()
+
+guest_list[2]="Darth Vader"
+
+print(guest_list)
+#replacing someone in a list
+
+
+guest_list=["Lebron James", "Abraham Lincoln", "George Lucas", "Walt Disney"]
+
+guest_list[2]="Darth Vader"
+guest_list.insert(0, "Ted")
+guest_list.insert(3, "Jeremy")
+guest_list.append("Paul")
+print(guest_list)
+#adding more guests to a list
+
+
+guest_list=["Lebron James", "Abraham Lincoln", "George Lucas", "Walt Disney"]
+print()
+guest_list[2]="Darth Vader"
+guest_list.insert(0, "Ted")
+guest_list.insert(3, "Jeremy")
+guest_list.append("Paul")
+print(guest_list)
+#making a smaller list
+
+
+#Reorganizing a list
+dream_vacations = ["Japan", "Anartica", "Russia", "Greece", "Austrailia"]
+print(dream_vacations)
+
+print (sorted(dream_vacations))
+print(dream_vacations)
+
+dream_vacations.reverse()
+print(dream_vacations)
+
+dream_vacations.reverse()
+print(dream_vacations)
+
+dream_vacations.sort()
+print(dream_vacations)
+
+dream_vacations.sort(reverse=True)
+print(dream_vacations)
+#resorting a list
+
+
+guest_list = ["Lebron James", "Abraham Lincoln","George Lucas", "Walt Disney"]
+print(f"Hello, we will be having {len(guest_list)} for dinner this evening")
+#counting the number of items in a list
+
+

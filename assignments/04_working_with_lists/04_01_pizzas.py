@@ -1,1 +1,10 @@
-#This is what the program is doing. 
+"""
+Brian Medina
+
+Now it's time for pizza
+"""
+
+pizzas = ['Veggie Delight', 'Pepperoni', "Jimmy's Pie", "Anchovies"]
+for pizza in pizzas:
+    print("Damn, I want some of that " + pizza + "!")
+print("Loop is done!")

@@ -1,4 +1,4 @@
-#This is what the program is doing. 
+#Using different functions with different messages for each item in the list
 list_of_current_consoles = ["Nintendo Switch", "Xbox One", "Playstation 5", "PC"]
 
 message = f"What I want for christmas is a {list_of_current_consoles[0].title()}"

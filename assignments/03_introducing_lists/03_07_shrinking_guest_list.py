@@ -1,4 +1,4 @@
-#This is what the program is doing. 
+#Readjusting the list to be smaller
 
 guest_list=["Lebron James", "Abraham Lincoln", "George Lucas", "Walt Disney"]
 print()

@@ -1,4 +1,5 @@
-#This is what the program is doing. 
+#Making a intentional error and then fixing it
+
 """ 
 list_of_current_consoles = ["Nintendo Switch", "Xbox One", "Playstation 5", "PC"]
 

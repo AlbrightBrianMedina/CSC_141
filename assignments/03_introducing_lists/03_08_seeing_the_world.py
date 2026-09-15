@@ -1,4 +1,4 @@
-#This is what the program is doing. 
+#Reorganizing a list
 dream_vacations = ["Japan", "Anartica", "Russia", "Greece", "Austrailia"]
 print(dream_vacations)
 
