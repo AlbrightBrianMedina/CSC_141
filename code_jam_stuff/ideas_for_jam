@@ -1,0 +1,41 @@
+#eliminating enemies
+"""
+♦  ♦  ♦  _  ♦
+
+         i
+         ∧
+
+
+Make a code that takes out a digit above it
+"""
+
+
+#picking ingrediants sandwhich maker
+"""
+ingrediants = (Lettuce, Tomato, Salami, Cheese, etc.)
+Make a code that randomly selects ingredients from a list and/or range
+The final result should be like:
+(Bread slice)
+(Lettuce)
+(Cheese)
+(Salami)
+(Bread Slice)
+"""
+
+
+#dice roll betting
+"""
+Set up a system that ranges from 1 - 6
+You have to use a program that randomly selects a number from 1-6
+You have to have a user input a number
+if the number matches the chosen number, you win
+"""
+
+
+#math car parking
+"""
+[=}   <--Car
+[=} [=} [=} ___ [=}  <--- line of parked cars
+ 9   2   3   7   1   <--- multiple choice answer to match question
+4+3 <--- math question
+"""

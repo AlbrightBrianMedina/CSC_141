@@ -3,8 +3,17 @@ Brian Medina
 
 One to One Million(Again)
 """
+"""
+digits = range (1,1000000)
+result = sum(digits)
+print(min(digits))
+print(max(digits))
 
-digits = [1, 1000000]
+
+print(result)
+"""
+
+digits = range (1,1000000)
 print(min(digits))
 print(max(digits))
 print(sum(digits))

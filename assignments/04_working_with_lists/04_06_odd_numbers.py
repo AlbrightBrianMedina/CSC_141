@@ -1,1 +1,8 @@
-#This is what the program is doing. 
+"""
+Brian J. Medina
+
+Making odd numbers
+"""
+
+for i in range(1, 20, 2):
+    print(i)

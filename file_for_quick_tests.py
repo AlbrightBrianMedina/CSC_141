@@ -1,9 +1,10 @@
 #this is just a file for quickly testing codes
 
-
+"""
 fruits = ["banana", "melon", "apple", "banana" "apple", "strawberry", "banana"]
 
 print(fruits)
+"""
 
 fruits = ["banana", "melon", "apple", "banana" "apple", "strawberry", "banana"]
 fruits[1]="duran" 
@@ -25,3 +26,5 @@ for(x)in range(len(fruits)):
     list_name [x] = (replaced word)
 """
 
+for i in range(1, 1000000):
+    print(i)
