@@ -1,7 +1,11 @@
 """
-Brian J. Medina
+
 
 Be there or be squared
 """
-cubes = [value**2 for value in range(1, 10)]
+
+cubes = list(range(1,11))
+for i in range(len(cubes)):
+    cubes[i] = cubes[i] **3
+
 print(cubes)

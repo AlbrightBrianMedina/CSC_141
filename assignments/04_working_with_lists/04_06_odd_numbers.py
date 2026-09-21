@@ -1,5 +1,5 @@
 """
-Brian J. Medina
+
 
 Making odd numbers
 """

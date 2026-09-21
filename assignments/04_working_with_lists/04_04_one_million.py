@@ -1,5 +1,5 @@
 """
-Brian Medina
+
 
 One to One Million
 """

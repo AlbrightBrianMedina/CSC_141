@@ -1,5 +1,5 @@
 """
-Brian Medina
+
 
 One to One Million(Again)
 """
@@ -13,7 +13,7 @@ print(max(digits))
 print(result)
 """
 
-digits = range (1,1000000)
+digits = range (1,1000001)
 print(min(digits))
 print(max(digits))
 print(sum(digits))
