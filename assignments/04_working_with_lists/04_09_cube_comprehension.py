@@ -1,4 +1,6 @@
 """
+Brian Medina
+
 A cube is a number raised to the third power
 To make a list comprehension you need to make a variable string with a range
 

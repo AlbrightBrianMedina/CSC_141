@@ -1,5 +1,5 @@
 """
-
+Brian Medina
 
 Odd jumping by 3
 """

@@ -1,4 +1,8 @@
-#This is what the program is doing. 
+"""
+Brian Medina
+
+Printing 2 different lists with 2 different for loops
+"""
 
 pizzas = ['Veggie Delight', 'Pepperoni', "Jimmy's Pie", "Anchovies", "Beef"]
 friend_pizzas = ['Veggie Delight', 'Pepperoni', "Jimmy's Pie", "Anchovies", "French Fries"]

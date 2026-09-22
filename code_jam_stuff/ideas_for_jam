@@ -15,11 +15,11 @@ Make a code that takes out a digit above it
 ingrediants = (Lettuce, Tomato, Salami, Cheese, etc.)
 Make a code that randomly selects ingredients from a list and/or range
 The final result should be like:
-(Bread slice)
+(Top Bread)
 (Lettuce)
 (Cheese)
 (Salami)
-(Bread Slice)
+(Bottom Bread)
 """
 
 
@@ -30,6 +30,8 @@ You have to use a program that randomly selects a number from 1-6
 You have to have a user input a number
 if the number matches the chosen number, you win
 """
+
+dice_numbers = [1, 2, 3, 4, 5, 6]
 
 
 #math car parking

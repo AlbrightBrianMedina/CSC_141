@@ -1,4 +1,8 @@
-#This is what the program is doing. 
+"""
+Brian Medina
+
+Selecting a specific number of items from the list.
+"""
 
 pizzas = ['Veggie Delight', 'Pepperoni', 'Plain Cheese', "Jimmy's Pie", "Anchovies", "Mega Mushroom", 'No cheese, just sauce', 'Holded crust', 'French fries']
 print(pizzas[0:3:1])

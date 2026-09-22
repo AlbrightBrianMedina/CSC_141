@@ -1,4 +1,8 @@
-#This is what the program is doing. 
+"""
+Brian Medina
+
+Remaking a menu using a for loop after making a intentional error
+"""
 
 menu_order = ("Beef stew", "Grilled Cheese", "Rice", "Chicken", "Sandwhich")
 print("Original Menu")
