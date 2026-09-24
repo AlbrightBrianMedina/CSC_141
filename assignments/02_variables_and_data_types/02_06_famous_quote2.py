@@ -1,3 +1,4 @@
+# https://www.youtube.com/watch?v=MGpFEv1-mAo  <-- Link to quote
 quote = """-where you'd be sitting in a design review and somebody say that's not 
 realistic and you're like okay what does that have like explain to me why that's
 interesting because in the real world I have to write up lists of stuff I have to
@@ -6,6 +7,3 @@ realism is fun I go play games to have fun-"""
 famous_person = "gabe newell"
 message = f"{famous_person.title()} once said \"{quote}\""
 print(message)
-
-
-#https://www.youtube.com/watch?v=MGpFEv1-mAo  <-- Link to quote

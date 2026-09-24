@@ -1,3 +1,4 @@
+# learning to print seperate names/words
 first_name = "Mario"
 last_name = "Luigi"
 full_name = f"{first_name} {last_name}"

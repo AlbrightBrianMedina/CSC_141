@@ -1,3 +1,4 @@
+# printing a name in all lowercase, uppcase, and as a title
 persons_name = "Jake Corners"
 
 print(persons_name.upper())

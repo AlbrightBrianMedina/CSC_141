@@ -1,5 +1,6 @@
-invintation_guest = "Eric Pumpkins"
-print(f"You have been invited to my party, {invintation_guest}")
+# inviting people to a party
+invitation_guest = "Eric Pumpkins"
+print(f"You have been invited to my party, {invitation_guest}")
 
 """
 The guest is being invited to a party.

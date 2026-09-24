@@ -1,3 +1,4 @@
+# picking a quote I like from the zen of python
 """
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.

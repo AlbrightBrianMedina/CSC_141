@@ -1,3 +1,4 @@
+# trying to make a proper quotation 
 quote = """-where you'd be sitting in a design review and somebody say that's not 
 realistic and you're like okay what does that have like explain to me why that's
 interesting because in the real world I have to write up lists of stuff I have to

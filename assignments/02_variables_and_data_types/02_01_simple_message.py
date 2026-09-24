@@ -1,3 +1,4 @@
+# learning to print a sense in all uppercase and lowercase
 sentence = "The quick brown fox jumped over the log"
 print(sentence.upper())
 print(sentence.lower())
