@@ -1,0 +1,21 @@
+#dice roll betting
+"""
+Set up a system that ranges from 1 - 6
+You have to use a program that randomly selects a number from 1-6
+You have to have a user input a number
+if the number matches the chosen number, you win
+"""
+from random import randint
+computer_pick = randint(1, 7)
+
+print (f"Don't cheat, but the number the computer picks is {computer_pick}")
+
+# from random import choice
+# dice_numbers = ["1", "2", "3", "4", "5", "6"]
+# number_landed = choice(dice_numbers)
+user_input = input('Choose your number (1-6):')
+
+if computer_pick == int(user_input):
+    print("You Win")
+else:
+    print("You lose") 

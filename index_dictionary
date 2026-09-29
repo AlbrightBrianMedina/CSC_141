@@ -9,8 +9,6 @@
 a = 1  
 #a variable
 
-
-
 a = 1
 print(a)
 #printing a variable 

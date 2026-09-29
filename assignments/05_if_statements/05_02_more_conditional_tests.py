@@ -1,5 +1,5 @@
 """
-
+ Brian Medina
 
  Writing a if statement for if a certain type of car is in the list
 """
@@ -29,14 +29,3 @@ for i in number_list:
       print("This is just the number 0")
 if 100 in number_list and 100 not in second_numbers_list:
   print("100 is in the first list")
-
-
-
-"""
-if "subaru" in cars:
-    print("Yes its true")
-if "ferrari" in cars:
-    print("Yes its in there")
-else:
-    print("No ferrari in there")
-"""

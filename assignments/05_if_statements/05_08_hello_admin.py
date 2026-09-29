@@ -1,7 +1,7 @@
 """
+ Brian Medina
 
-
-statements with usernames
+ What to say if someone is a admin and the others are not
 """
 
 users = [ "Admin", "John", 'Alice', "Bob", 'Charlie']

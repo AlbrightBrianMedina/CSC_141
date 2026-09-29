@@ -1,3 +1,8 @@
+"""
+ Brian Medina
+
+ Program for what to do if an item is in a list
+"""
 favorite_fruit = ["Watermellon", "Banana", "Strawberries"]
 if "Watermellon" in favorite_fruit:
     print("You really like watermellon!")

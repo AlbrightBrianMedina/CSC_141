@@ -1,3 +1,8 @@
+"""
+ Brian Medina
+
+ Program for what to say if a username is taken
+"""
 current_users = ["Mark", "John", "Smith", "Ashley", "Michal"]
 new_users = ["Jordan", "Mark", "Trent", "Smith", "Bob"]
 

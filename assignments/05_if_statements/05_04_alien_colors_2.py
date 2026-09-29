@@ -1,6 +1,5 @@
 """
-
-
+ Brian Medina
 
  Repeating previous step, added more colors and print comments.
 """

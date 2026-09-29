@@ -1,7 +1,7 @@
 """
+ Brian Medina
 
-
-statements with usernames
+ Program for if there are now users
 """
 
 users = []

@@ -1,7 +1,7 @@
 """
+ Brian Medina
 
-
-Adding more if statements for the colors
+ Adding more if statements for the colors
 """
 alien_color = "green"
 if alien_color == "green":

@@ -1,0 +1,6 @@
+"""
+Blackjack/ up to 21
+-Need multiple randoms/randints from 1-10
+-Need multiple user inputs weather to draw or stay
+-Chosen numbers need to be added with eachother
+"""

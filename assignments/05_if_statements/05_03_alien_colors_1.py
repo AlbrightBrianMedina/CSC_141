@@ -1,7 +1,7 @@
 """
+ Brian Medina
 
-
-Writing a if statement for what happens when a certain color is selected.
+ Writing a if statement for what happens when a certain color is selected.
 """
 
 alien_color = "green"

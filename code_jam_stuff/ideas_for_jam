@@ -30,22 +30,20 @@ You have to use a program that randomly selects a number from 1-6
 You have to have a user input a number
 if the number matches the chosen number, you win
 """
-
-
-message = input("The Number Your Chose is: ")
 from random import randint
-randint(1, 6)
+computer_pick = randint(1, 7)
 
-from random import choice
-dice_numbers = ["1", "2", "3", "4", "5", "6"]
-number_landed = choice(dice_numbers)
-number_landed
-if number_landed == input():
+print (f"Don't cheat, but the number the computer picks is {computer_pick}")
+
+# from random import choice
+# dice_numbers = ["1", "2", "3", "4", "5", "6"]
+# number_landed = choice(dice_numbers)
+user_input = input('Choose your number (1-6):')
+
+if computer_pick == int(user_input):
     print("You Win")
 else:
-    print("You lose")
-
-
+    print("You lose") 
 
 #math car parking
 """
@@ -53,4 +51,12 @@ else:
 [=} [=} [=} ___ [=}  <--- line of parked cars
  9   2   3   7   1   <--- multiple choice answer to match question
 4+3 <--- math question
+"""
+
+
+"""
+Blackjack/ up to 21
+-Need multiple randoms/randints from 1-10
+-Need multiple user inputs weather to draw or stay
+-Chosen numbers need to be added with eachother
 """

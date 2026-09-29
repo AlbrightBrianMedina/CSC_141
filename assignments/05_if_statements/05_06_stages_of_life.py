@@ -1,3 +1,8 @@
+"""
+ Brian Medina
+
+ Program for the output to change depending on the age of a person
+"""
 age_number = [2, 4, 13, 20, 65]
 for i in age_number:
     print(f"age: {i}")
