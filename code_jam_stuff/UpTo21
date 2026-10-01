@@ -4,3 +4,6 @@ Blackjack/ up to 21
 -Need multiple user inputs weather to draw or stay
 -Chosen numbers need to be added with eachother
 """
+
+
+cards = [1, 10]
