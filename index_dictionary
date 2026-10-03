@@ -223,5 +223,13 @@ for(x)in range(len(fruits)):
     list_name [x] = (replaced word)
 """
 
-
-#type here
+"""
+print - This will print to screen.
+range - Output a range of numbers.
+if - Is something true of false.
+variable - something that holds data.
+string - In array of characters.
+syntax - Set of rules of how codes should be structured and written.
+for loop - It cycles through a list/dictionary/values/data/etc.
+len - Returns of the length of a string.
+"""
