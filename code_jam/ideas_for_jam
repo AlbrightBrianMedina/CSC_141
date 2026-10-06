@@ -1,4 +1,6 @@
 #eliminating enemies
+
+# code_jam\images\blue_puck.png
 """
 ♦  ♦  ♦  _  ♦
 
@@ -29,6 +31,8 @@ Set up a system that ranges from 1 - 6
 You have to use a program that randomly selects a number from 1-6
 You have to have a user input a number
 if the number matches the chosen number, you win
+
+"""
 """
 from random import randint
 computer_pick = randint(1, 7)
@@ -44,6 +48,7 @@ if computer_pick == int(user_input):
     print("You Win")
 else:
     print("You lose") 
+"""
 
 #math car parking
 """
@@ -60,3 +65,26 @@ Blackjack/ up to 21
 -Need multiple user inputs weather to draw or stay
 -Chosen numbers need to be added with eachother
 """
+
+
+import pygame 
+pygame.init()
+clock = pygame.time.Clock()
+screen = pygame.display.set_mode(((640,480)))
+my_image = pygame.image.load("code_jam/images/blue_puck.png")
+image_rect = my_image.get_rect(center=(320,240))
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.fill((0, 0, 0))
+    image_rect.x += 1
+
+    if image_rect.x > screen.get_width():
+        image_rect.x = -image_rect.width
+    screen.blit(my_image, image_rect)
+    pygame.display.flip()
+    clock.tick(15)
