@@ -1,7 +1,8 @@
 """
-comment here
+ Brian Medina
 
-comment here
+ Rivers of Flowing Data
+ Making a dictionary about rivers in the world
 """
 
 dictionary = {'the nile': 'egypt',

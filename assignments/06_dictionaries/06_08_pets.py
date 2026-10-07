@@ -1,7 +1,8 @@
 """
-comment here
+ Brian Medina
 
-Informations about Pets
+ Informations about Pets
+ M
 """
 
 pets = [ 

@@ -1,7 +1,8 @@
 """
-comment here
+ Brian Medina
 
-comment here
+ Languages of Code
+ Making a dictionary of people's favorite languages 
 """
 
 favorite_languages = {

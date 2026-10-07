@@ -1,9 +1,9 @@
 """
-comment here
+ Brian Medina
 
-Glossary of programming commands
+ Glossary of programming commands
 
-Level 5/10
+ Level 5/10
 """
 
 commands = {'print': 'This will print to screen.',

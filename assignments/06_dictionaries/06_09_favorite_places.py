@@ -1,7 +1,8 @@
 """
-comment here
+ Brian Medina
 
-comment here
+ Ideal vactional spots
+ Making a dictionary of people and the places they would like to go to 
 """
 
 favorite_places = [{'friends name': "paul",

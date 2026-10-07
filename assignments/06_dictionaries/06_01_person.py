@@ -1,7 +1,7 @@
 """
-comment here
+ Brian Medina
 
-comment here
+ Making a dictionary about a person
 """
 
 person = {'First Name': 'Blake',

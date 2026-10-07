@@ -1,8 +1,9 @@
 """
-comment here
+ Brian Medina
 
-comment here
+ Making a list of people with their dictionary of information and using a for loop to print their info
 """
+
 list_of_people = [ 
 {'First Name': 'Blake',
 'Last Name': 'Williams',

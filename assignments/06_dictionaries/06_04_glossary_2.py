@@ -1,7 +1,7 @@
 """
-comment here
+ Brian Medina
 
-comment here
+ An extended list of glossary commands and using a loop to print it
 """
 
 commands = {'print': 'This will print to screen.',
