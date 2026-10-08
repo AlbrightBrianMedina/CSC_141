@@ -80,8 +80,28 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    screen.fill((0, 0, 0))
-    image_rect.x += 1
+    screen.fill((100, 255, 0))
+     #image_rect.x += 1
+
+     # Get pressed keys
+    keys = pygame.key.get_pressed()
+    dt = 0.3
+    # W = Forward (up)
+    if keys[pygame.K_w]:
+        image_rect.y -= 20 * dt
+    
+    # S = Back (down)
+    if keys[pygame.K_s]:
+        image_rect.y += 20 * dt
+    
+    # A = Right (right)
+    if keys[pygame.K_a]:
+        image_rect.x -= 20 * dt
+    
+    # D = Left (left)
+    if keys[pygame.K_d]:
+        image_rect.x += 20 * dt
+
 
     if image_rect.x > screen.get_width():
         image_rect.x = -image_rect.width
