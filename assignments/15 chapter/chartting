@@ -1,0 +1,5 @@
+import matplotlib.pyplot as plt
+squares = [1, 7, 25, 56, 74]
+fig, ax = plt.subplots()
+ax.plot(squares)
+plt.show()
