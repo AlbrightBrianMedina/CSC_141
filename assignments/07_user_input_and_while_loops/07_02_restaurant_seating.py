@@ -1,6 +1,6 @@
-# type here
-# type here
-# type here
+# Brian Medina
+# 
+# Number of people arriving to the party
 
 number_of_people = int(input('Hopw many people are in your party?:'))
 # can't compare a string to a interger, use int() turn string into interger

@@ -1,6 +1,6 @@
+# Brian Medina
 #
-#
-#
+# What to say if someone is young enough for a free ticket
 
 active = True
 while active:

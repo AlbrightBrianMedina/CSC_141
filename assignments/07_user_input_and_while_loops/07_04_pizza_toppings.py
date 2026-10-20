@@ -1,6 +1,6 @@
+# Brian Medina
 #
-#
-#
+# Choose your toppings 
 
 pizzas = True
 while pizzas:

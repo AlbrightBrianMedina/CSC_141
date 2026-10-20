@@ -1,6 +1,6 @@
+# Brian Medina
 #
-#
-#
+# If it's multiple of a number
 
 
 

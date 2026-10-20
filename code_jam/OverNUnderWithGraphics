@@ -39,36 +39,116 @@ while running:
 
 
 
-        # from random import randint
-        # running = True
-        # while running:
-        #     computer_pick = randint(1, 13) 
-        #     print (f"The card landed on {computer_pick}.")
-        #     # user_input2 = input('Make your choice Player 2(Over or Under?):')
-        #     player_pick = randint(1, 13)
 
-        #     #win_image = pygame.image.load('images/youwin.jpg')
-        #     #lose_image = pygame.image.load('images/youlose.jpg')
-        #     #tie_image = pygame.image.load('images/tiegame.jpg')
 
-        #     print (f"The player card landed on {player_pick}, now choose: Over or Under?")
-        #     user_input = input('Make your choice Player 1(Over or Under?):')
 
-        #     if user_input.lower() == ("over") and (player_pick > computer_pick):
-        #         print('you win') 
-        #     elif user_input.lower() == ("over") and (player_pick < computer_pick):
-        #         print('you lose')
-        #     elif user_input.lower() == ("over") and (player_pick == computer_pick):
-        #         print("it's a tie")
-        #     elif user_input.lower() == ("under") and (player_pick == computer_pick):
-        #         print("It's a tie")
-        #     elif user_input.lower() == ("under") and (player_pick > computer_pick):
-        #         print("You lose")
-        #     elif user_input.lower() == ("under") and (player_pick < computer_pick):
-        #             print("You win")
-        #     else:
-        #         print("Please choose over or under")
+    # by Timothy Downs, inputbox written for my map editor
 
+# This program needs a little cleaning up
+# It ignores the shift key
+# And, for reasons of my own, this program converts "-" to "_"
+
+# A program to get user input, allowing backspace etc
+# shown in a box in the middle of the screen
+# Called by:
+# import inputbox
+# answer = inputbox.ask(screen, "Your name")
+#
+# Only near the center of the screen is blitted to
+
+import pygame, pygame.font, pygame.event, pygame.draw, string
+from pygame.locals import *
+
+def get_key():
+  while 1:
+    event = pygame.event.poll()
+    if event.type == KEYDOWN:
+      return event.key
+    else:
+      pass
+
+def display_box(screen, message):
+  "Print a message in a box in the middle of the screen"
+  fontobject = pygame.font.Font(None,18)
+  pygame.draw.rect(screen, (0,0,0),
+                   ((screen.get_width() / 2) - 100,
+                    (screen.get_height() / 2) - 10,
+                    200,20), 0)
+  pygame.draw.rect(screen, (255,255,255),
+                   ((screen.get_width() / 2) - 102,
+                    (screen.get_height() / 2) - 12,
+                    204,24), 1)
+  if len(message) != 0:
+    screen.blit(fontobject.render(message, 1, (255,255,255)),
+                ((screen.get_width() / 2) - 100, (screen.get_height() / 2) - 10))
+  pygame.display.flip()
+
+def ask(screen, question):
+  "ask(screen, question) -> answer"
+  pygame.font.init()
+  current_string = []
+  display_box(screen, question + ": " + string.join(current_string,""))
+  while 1:
+    inkey = get_key()
+    if inkey == K_BACKSPACE:
+      current_string = current_string[0:-1]
+    elif inkey == K_RETURN:
+      break
+    elif inkey == K_MINUS:
+      current_string.append("_")
+    elif inkey <= 127:
+      current_string.append(chr(inkey))
+    display_box(screen, question + ": " + string.join(current_string,""))
+  return string.join(current_string,"")
+
+def main():
+  screen = pygame.display.set_mode((320,240))
+  print ask(screen, "Name") + " was entered"
+
+if __name__ == '__main__': main()
+
+
+
+
+
+
+#win_image = pygame.image.load('images/youwin.jpg')
+#lose_image = pygame.image.load('images/youlose.jpg')
+#tie_image = pygame.image.load('images/tiegame.jpg')
+
+
+
+
+
+from random import randint
+while True:
+    computer_pick = randint(1, 13) 
+    player_pick = randint(1, 13) 
+
+    print (f"The player card landed on {computer_pick}, now choose: Over or Under?")
+    user_input = input('Make your choice Player 1(Over or Under?):')
+
+    if user_input.lower() == ("over") and (player_pick > computer_pick):
+        print('you win')
+    elif user_input.lower() == ("over") and (player_pick < computer_pick):
+        print('you lose')
+    elif user_input.lower() == ("over") and (player_pick == computer_pick):
+        print("it's a tie")
+    elif user_input.lower() == ("under") and (player_pick == computer_pick):
+        print("It's a tie")
+    elif user_input.lower() == ("under") and (player_pick > computer_pick):
+        print("You lose")
+    elif user_input.lower() == ("under") and (player_pick < computer_pick):
+            print("You win")
+    else:
+        print("Please choose over or under")
+    print(f"The answer was {player_pick}")
+
+    repeat = input('Want to try again? (yes/no)')
+    while repeat != 'no' and repeat != 'yes':
+         repeat = input()
+    if repeat == 'no':
+            break     
 
 
 
