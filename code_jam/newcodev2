@@ -1,0 +1,62 @@
+import pygame
+from pathlib import Path
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+window_width, window_height = 960, 540  # Adjusted for two images
+window = pygame.display.set_mode((window_width, window_height))
+
+# Initialize font
+pygame.font.init()
+font = pygame.font.SysFont(None, 48)  # Use default font, size 48
+text = f'You draw the Queen of Hearts'
+# Create the text surface and replace the underscores with spaces
+text_surface = font.render(text, True, (255, 255, 255))  
+
+card_image = pygame.transform.scale(pygame.image.load("images/youlose.jpg"), (window_width // 5, window_height // 2))
+
+
+# Calculate the position to place the text near the bottom center
+offset_from_bottom = 30
+text_rect = text_surface.get_rect(center=(window_width // 2, window_height - offset_from_bottom - text_surface.get_height() // 2))
+running = True
+clock = pygame.time.Clock()  # Create a Clock object to manage the frame rate
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    
+    window.fill((0, 0, 0))  # Black background
+
+    background_rect = text_rect.inflate(25, 15)  # Make the rectangle slightly larger than the text
+    pygame.draw.rect(window, (0, 0, 0), background_rect)  # Black color
+    window.blit(text_surface, text_rect)  # Position the text (50, 50) pixels from the top-left corner
+    pygame.display.flip()
+
+    window.blit(card_image, (0, 0))               # Position the first image on the left
+    
+    
+        # Update the display
+    pygame.display.flip()
+
+    
+    # Wait for user input to continue
+    pause = True
+    while pause:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+                pause = False
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    pause = False  # Exit the pause loop on any key press
+
+    text = f'You draw the Ace of Spaces'
+    text_surface = font.render(text, True, (255, 255, 255))  
+    card_image = pygame.transform.scale(pygame.image.load("images/youwin.jpg"), (window_width // 5, window_height // 2))
+
+    clock.tick(60)  # Limit to 60 FPS
+# Quit Pygame
+sys.exit()
