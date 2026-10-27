@@ -2,11 +2,14 @@
 # OverUnder, card lands on a number, you have and 
 # an opponent have to choose if the next number will be over or under the current roll
 
+import pygame
+from pathlib import Path
+import sys
 
-
-#win_image = pygame.image.load('images/youwin.jpg')
-#lose_image = pygame.image.load('images/youlose.jpg')
-#tie_image = pygame.image.load('images/tiegame.jpg')
+win_image = pygame.image.load('images/youwin.jpg')
+lose_image = pygame.image.load('images/youlose.jpg')
+tie_image = pygame.image.load('images/tiegame.jpg')
+img = pygame.image.open('image.jpg')
 
 
 
@@ -22,16 +25,22 @@ while True:
 
     if user_input.lower() == ("over") and (player_pick > computer_pick):
         print('you win')
+        print(pygame.image.load('images/youwin.jpg'))
     elif user_input.lower() == ("over") and (player_pick < computer_pick):
         print('you lose')
+        print(pygame.image.load('images/youlose.jpg'))
     elif user_input.lower() == ("over") and (player_pick == computer_pick):
         print("it's a tie")
+        print(pygame.image.load('images/tiegame.jpg'))
     elif user_input.lower() == ("under") and (player_pick == computer_pick):
         print("It's a tie")
+        print(pygame.image.load('images/tiegame.jpg'))
     elif user_input.lower() == ("under") and (player_pick > computer_pick):
         print("You lose")
+        print(pygame.image.load('images/tiegame.jpg'))
     elif user_input.lower() == ("under") and (player_pick < computer_pick):
             print("You win")
+            print(pygame.image.load('images/youwin.jpg'))
     else:
         print("Please choose over or under")
     print(f"The answer was {player_pick}")
@@ -41,3 +50,9 @@ while True:
          repeat = input()
     if repeat == 'no':
             break     
+
+
+
+
+# Quit Pygame
+sys.exit()
