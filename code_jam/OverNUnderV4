@@ -1,5 +1,5 @@
 #Buttons
-
+from random import randint
 import pygame
 pygame.init()
 
@@ -9,7 +9,7 @@ screen = pygame.display.set_mode([WIDTH, HEIGHT])
 fps = 60
 timer = pygame.time.Clock()
 font = pygame.font.Font('freesansbold.ttf', 18)
-text_font = pygame.font.SysFont("turrok.tff", 60)
+text_font = pygame.font.SysFont("Arial.tff", 60)
 pygame.display.set_caption("Over N' Under!")
 button1_enabled = True
 new_press = True 
@@ -32,18 +32,14 @@ class MyButton:
         button_text = font.render(self.text, True, 'black')
         button_rect = pygame.rect.Rect((self.x_pos, self.y_pos), (150, 25))
         if self.enabled:
-            if self.check_click():
+            if self.check_click() == True:
                 pygame.draw.rect(screen, 'dark gray', button_rect, 0, 5)
             else:
                 pygame.draw.rect(screen, 'light gray', button_rect, 0, 5)
-        else:
-            pygame.draw.rect(screen, 'black', button_rect, 0, 5)
+            # else:
+            #     pygame.draw.rect(screen, 'black', button_rect, 0, 5)
         pygame.draw.rect(screen, 'black', button_rect, 2, 5)
         screen.blit(button_text, (self.x_pos + 3, self.y_pos + 3))
-
-    def button(self):
-        print("Clicked")
-    
 
     def check_click(self):
         mouse_pos = pygame.mouse.get_pos()
@@ -54,9 +50,6 @@ class MyButton:
         else:
             return False
         
-
-
-from random import randint
 
 
 run = True
@@ -72,6 +65,7 @@ while run:
     player_pick = randint(1, 21) 
 
     screen.fill('white')
+    
     draw_text("Make your choice!", text_font, (0,0,0), 60, 100)
     draw_text("The CPU landed on", text_font, (0,0,0), 50, 180)
     draw_text(f"{computer_pick}", text_font, (0,0,0), 220, 220)
@@ -80,8 +74,8 @@ while run:
     my_button = MyButton('Over', 170, 200, True)
     my_button2 = MyButton('Under', 170, 200, True)
 
-    # my_button3 = MyButton('Yes', 170, 200, True)
-    # my_button4 = MyButton('No', 170, 250, True)
+    my_button3 = MyButton('Yes', 170, 200, True)
+    my_button4 = MyButton('No', 170, 250, True)
 
 
 # this is when you press down left click AND when you unpress left click
