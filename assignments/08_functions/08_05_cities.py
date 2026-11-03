@@ -1,6 +1,6 @@
 #
 #
-3
+#
 
 def describe_city(city, country = "Ghana"):
     print(f"{city} is in {country}.")
