@@ -2,9 +2,10 @@
 #
 #
 
-def city_country(city = "santiago", country = "chile"):
+def city_country(city, country):
     cc_name = (f"{city}, {country}")
     return cc_name
 
-city_and_country_location = (f"santiago", "chile")
-print(city_and_country_location)
+print(city_country("santiago", "chile"))
+print(city_country("tokyo", "japan"))
+print(city_country("new york city", "america"))
