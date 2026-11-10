@@ -1,15 +1,10 @@
-users = {
-'aeinstein': {
-'first': 'albert',
-'last': 'einstein',
-'location': 'princeton',},}
+def build_profile(first, last, **user_info):
 
-for username, user_info in users.items():
-    print(f"\nUsername: {username}")
-    full_name = f"{user_info['first']} {user_info['last']}"
-    location = user_info['location']
-    print(f"\tFull name: {full_name.title()}")
-    print(f"\tLocation: {location.title()}")
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
 
-
-build_profile()
+user_profile = build_profile('george', 'washington',
+                                location='usa',
+                                field='presidency')
+print(user_profile)
