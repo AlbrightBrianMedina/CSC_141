@@ -1,6 +1,6 @@
+# Brian Medina
 #
-#
-#
+# If only I could go to these places
 
 def city_country(city, country):
     cc_name = (f"{city}, {country}")

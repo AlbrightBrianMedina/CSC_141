@@ -1,3 +1,7 @@
+# Brian Medina
+#
+# editing the def fuction about albums with user inputs
+
 def make_album(musician, album_name, number_of_songs = None):
     if number_of_songs is None:
         return {musician : album_name}

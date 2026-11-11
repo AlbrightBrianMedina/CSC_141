@@ -1,3 +1,7 @@
+# Brian Medina
+#
+# Using the ** function to hold more info
+
 def make_car(model_name, manufacturer, **car_info):
     res = {}
     res["manufacturer"] = manufacturer

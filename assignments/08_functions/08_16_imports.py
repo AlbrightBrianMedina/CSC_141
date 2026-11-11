@@ -1,6 +1,6 @@
+# Brian Medina
 #
-#
-# 
+# Ways of importing
  
 import fav_book
 # this will import the module from another file  

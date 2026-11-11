@@ -1,3 +1,7 @@
+# Brian Medina
+# 
+# Making album list and a argument for numbers of songs
+
 def make_album(musician, album_name, number_of_songs = None):
     if number_of_songs is None:
         return {musician : album_name}

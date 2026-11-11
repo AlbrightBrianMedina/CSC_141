@@ -1,3 +1,7 @@
+# Brian Medina
+#
+# appending messages and data 
+
 def send_messages(messages, sent_messages):
     while messages:
         msg = messages.pop()

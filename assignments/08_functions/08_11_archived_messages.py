@@ -1,3 +1,7 @@
+# Brian Medina
+# 
+# printing the messages as lists
+
 def send_messages(messages, sent_messages):
     while messages:
         msg = messages.pop()

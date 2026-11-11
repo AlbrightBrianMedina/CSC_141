@@ -1,6 +1,6 @@
-#
+# Brian Medina
 # 
-# 
+# using Def function to say a favorite book
 
 
 def favorite_book(title):

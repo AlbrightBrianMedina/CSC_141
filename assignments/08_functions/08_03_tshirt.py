@@ -1,7 +1,6 @@
-# def make_tshirt(size = '3XL', text_of_shirt = 'Epic Gamer', color_of_shirt = 'Blue', tshirt_store = 'Walmart'):
-#     print(f"The size of the shirt is {size} and the text on the shirt is {text_of_shirt}. It's the color {color_of_shirt} and you can find it at {tshirt_store}")
-
-# make_tshirt()
+# Brian Medina
+# 
+# making a def function about t-shirts
 
 
 def make_tshirt(size, text_of_shirt):

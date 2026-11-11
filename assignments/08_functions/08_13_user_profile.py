@@ -1,3 +1,8 @@
+# Brian Medina
+#
+# Making a profile in a def function
+
+
 def build_profile(first, last, **user_info):
 
     user_info['first_name'] = first
